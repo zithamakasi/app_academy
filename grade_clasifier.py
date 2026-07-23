@@ -36,9 +36,19 @@ else:
     assign_status = "Fail"
     print("Fail")         
  
-intervention = "The test score that has below 40 needs intervention"    
-if (mark1 < 40 and mark2 < 40) or mark3 < 40:
-    print(intervention)    
+intervention = "The test score that has below 40 needs intervention"   
+
+if mark1 < 40:
+     print(intervention) 
+     
+elif mark2 < 40: 
+      print(intervention)
+      
+elif mark3 < 40:
+    print(intervention) 
+    
+else:
+    print("Good job!!!")       
     
 print("-------------------------------------------------Report Card ------------------------------------------------------") 
 print(f"|{"Input":<50} | {"Result":<59} |") 
@@ -50,3 +60,4 @@ print(f"|{"Mark3":<50} | {mark3:<59} |")
 print(f"|{"Average_mark":<50} | {average_mark:<59} |") 
 print(f"|{"Letter_grade":<50} | {letter_grade:<59} |")    
 print(f"|{"Assign_status":<50} | {assign_status:<59} |") 
+print(f"|{"Intervation":<50} | {intervention:<59} |")
